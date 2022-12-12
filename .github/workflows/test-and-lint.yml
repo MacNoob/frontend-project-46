@@ -1,16 +1,19 @@
 name: GitHub Actions
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+
+
 on: [push]
 jobs:
+  build:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
+      - name: Install node
+      - run: make install
       - name: Check out repository code
       - run: make test
-        uses: actions/checkout@v3
       - name: Check code coverage
       - run: make test-coverage
       - name: List files in the repository
-        run: |
-          ls ${{ github.workspace }}
+        run: ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
