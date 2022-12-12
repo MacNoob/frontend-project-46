@@ -21,6 +21,7 @@ const compare = (obj1, obj2) => {
     });
   const res = `{
   ${result}}`;
+
   return res.replace(/[",]/g, '  ');
 };
 
