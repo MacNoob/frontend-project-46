@@ -11,9 +11,16 @@ const getFixturePath = (filename) => path.join(__dirname, '..', '__fixtures__', 
 const readFile = (filename) => fs.readFileSync(getFixturePath(filename), 'utf-8');
 
 // eslint-disable-next-line no-undef
-test('genDiff', () => {
+test('json', () => {
   const expectedData = readFile('expected.txt');
   const actualData = genDiff(getFixturePath('file1.json'), getFixturePath('file2.json'));
   // eslint-disable-next-line no-undef
+  expect(actualData).toEqual(expectedData);
+});
+
+// eslint-disable-next-line no-undef
+test('yaml', () => {
+  const expectedData = readFile('expected.txt');
+  const actualData = genDiff(getFixturePath('file1.yaml'), getFixturePath('file2.yaml'));
   expect(actualData).toEqual(expectedData);
 });
