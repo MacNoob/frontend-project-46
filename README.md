@@ -5,4 +5,4 @@
 
 [![Test Coverage](https://api.codeclimate.com/v1/badges/d287b8ded40df10d2c1f/test_coverage)](https://codeclimate.com/github/MacNoob/frontend-project-46/test_coverage)
 
-https://asciinema.org/a/lkhJ2Oqg7aN3JGxx90XH0PjUQ
+<script id="asciicast-lkhJ2Oqg7aN3JGxx90XH0PjUQ" src="https://asciinema.org/a/lkhJ2Oqg7aN3JGxx90XH0PjUQ.js" async></script>
